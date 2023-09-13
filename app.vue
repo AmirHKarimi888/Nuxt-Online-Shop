@@ -5,6 +5,8 @@
 </template>
 
 <script setup>
+import './assets/main.css'
+
 useSeoMeta({
   title: 'Clothing Store',
   ogTitle: 'Clothing Store',
