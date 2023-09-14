@@ -85,7 +85,7 @@ import { url } from '../../api';
 
 const nums = [1, 2, 3, 4, 5, 6];
 
-const { data: products, pending, error, refresh, status } = await useFetch(url + "/products", { server: false });
+const { data: products, pending, error, refresh, status } = await useFetch(url + "/products");
 
 const categoryProducts = ref(products);
 
