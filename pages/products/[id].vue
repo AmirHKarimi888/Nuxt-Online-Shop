@@ -1,6 +1,6 @@
 <template>
-    <div class="mb-[200px]">
-        
+    <div>
+
     </div>
 </template>
 
