@@ -1,10 +1,11 @@
 <template>
     <header>
-        <HeaderView @toggleTheme="toggleTheme" />
+        <HeaderView @toggleTheme="toggleTheme" @toggleSearchModal="toggleSearchModal" />
     </header>
 
     <main>
         <NuxtPage />
+        <SearchModal @toggleSearchModal="toggleSearchModal" />
     </main>
 
     <footer>
@@ -43,6 +44,16 @@ const toggleTheme = () => {
     document.getElementById("themeToggleBtnIcon").classList.remove("fa-moon-o");
     document.getElementById("themeToggleBtnIcon").classList.add("fa-sun-o");
   }
+}
+
+const toggleSearchModal = () => {
+    if(document.getElementById("searchBox").classList.contains("hidden")) {
+        document.getElementById("searchBox").classList.remove("hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+    } else {
+        document.getElementById("searchBox").classList.add("hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+    }
 }
 </script>
 

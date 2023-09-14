@@ -55,7 +55,6 @@
             <NuxtLink :to="'/products/' + product?._id">
                 <img class="mx-auto w-[100%] aspect-square" :src="'images/' + product._id + '.jpg'" alt="">
                 <p class="w-[96%] h-[50px] mt-5">{{ product?.title }}</p>
-                {{ product.category.slug }}
             </NuxtLink>
         </li>
     </ul>
