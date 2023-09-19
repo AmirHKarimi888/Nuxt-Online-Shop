@@ -13,7 +13,7 @@
                 <li v-for="product in categoryProducts" :key="product._id"
                     class="aspect-square border border-gray-400 dark:text-white dark:border-gray-600 shadow-lg shadow-gray-400 dark:shadow-gray-900 p-4">
                     <NuxtLink :to="'/products/' + product?._id">
-                        <img class="mx-auto w-[100%] aspect-square" :src="'images/' + product._id + '.jpg'" alt="">
+                        <img class="mx-auto w-[100%] aspect-square" :src="'/images/' + product._id + '.jpg'" alt="">
                         <p class="w-[96%] h-[50px] mt-5">{{ product?.title }}</p>
                     </NuxtLink>
                 </li>
